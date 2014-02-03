@@ -1,4 +1,9 @@
 <h1>Product Index</h1>
-<p>xxx</p>
+<p></p>
 
 <%= link_to 'New Product', "/products/new" %>
+
+	<%- @products.each do |product| %>
+  <p><%= product[:name] %>, <%= product[:description] %>
+  <%= product.formatted_price %></p>
+<% end %>
