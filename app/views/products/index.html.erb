@@ -14,12 +14,15 @@
 
 <% @products.each do |product| %>
 	<tr>
-		<td><%= product.name %></td>
+		<td><%= link_to product.name, product_path(product) %></td>
 		<td><%= product.description %></td>
 		<td><%= product.formatted_price %></td>
 		<td><%= link_to 'Review', reviews_new_path %></td>
 
 	</tr>
+
 <% end %>
 
 </table>
+
+
