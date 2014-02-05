@@ -6,7 +6,6 @@
 <table>
 	<tr>
 		<th>Name</th>
-		<th>Description</th>
 		<th>Price</th>
 		<th></th>
 	</tr>
@@ -15,10 +14,8 @@
 <% @products.each do |product| %>
 	<tr>
 		<td><%= link_to product.name, product_path(product) %></td>
-		<td><%= product.description %></td>
+<!-- 		<td><%= product.description %></td> -->
 		<td><%= product.formatted_price %></td>
-		<td><%= link_to 'Review', reviews_new_path %></td>
-
 	</tr>
 
 <% end %>

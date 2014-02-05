@@ -2,6 +2,7 @@ class ProductsController < ApplicationController
   
   before_filter :ensure_logged_in, :only => [:show]
 
+
   def index
     @products = Product.all
   end
