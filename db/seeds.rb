@@ -5,82 +5,82 @@ Product.create!(
 	:url 							=> "http://www.youthedesigner.com/wp-content/uploads/2010/03/beautiful-book-covers-73.jpg"
 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 
-Product.create!(
-	:name 						=> ""
-	:description 			=> ""
-	:price_in_cents 	=> ""
-	:url 							=> ""
-	)
+# Product.create!(
+# 	:name 						=> ""
+# 	:description 			=> ""
+# 	:price_in_cents 	=> ""
+# 	:url 							=> ""
+# 	)
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #

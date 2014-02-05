@@ -2,6 +2,7 @@
 
 <%= link_to 'Back to Home', products_path %>
 
+ <img src="<%= @product[:url] %>">
  <h2><%= @product.name %></h2>
  <p><%= @product.formatted_price %></p>
   <p><%= @product.description %></p>
