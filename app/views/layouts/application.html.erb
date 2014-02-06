@@ -1,17 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+
+  <link href="//fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
+
   <title>Rainforest</title>
+
+  <style>
+  a {color: #58585B;}
+  :link {text-decoration:none;}
+  a:hover {color: #8FB4C2;}
+  </style>
+ 
+  <%= favicon_link_tag 'favicon.ico' %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+
 </head>
+
+<header>
+
+    <div id="logo"> 
+      <%=image_tag image_path('rainforest_logo.png') %>
+    </div>
+
+    <div id="menu">
+      <ul>
+        <li>|  <%= link_to 'home', "/products" %></li>
+        <li>|  <%= link_to 'log in', "/sessions/new" %></li>
+        <li>|  <%= link_to 'sign up', "/users/new" %></li>
+        <li>|  <%= link_to 'add a book', "/products/new" %></li>
+      </ul>
+    </div>
+
+</header>
+
 <body>
-	<% if flash[:notice] %>
+	
+  <% if flash[:notice] %>
 		<p id="notice"><%= flash[:notice] %></p>
 	<% end %>
 	<% if flash[:alert] %>
-	<p id="alert"><%= flash[:alert] %></p>
+	
+  <p id="alert"><%= flash[:alert] %></p>
 <% end %>
 
 
