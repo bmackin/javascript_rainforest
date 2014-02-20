@@ -13,13 +13,25 @@
 
 
 .float {
-			  float: left;
-			  height: 200px;
-			  padding: 75px;
-			  padding-top: 230px;
+				
+				display: inline-block; 
+				padding: 25px;
 }
 
 .float p {
 		   text-align: center;
+		   marging-top: -5px;
+
 		   }
 
+
+#body {
+                    width: 70%; left: 15%; 
+          text-align: centre;
+          position: static; 
+          width: 100%;
+          margin-left: 200px;
+          height: 100px; 
+          padding: 25px;
+
+}

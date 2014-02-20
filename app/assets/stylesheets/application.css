@@ -30,10 +30,11 @@ body {
           padding: 10px;
 }
 
-#body {
+/*#body {
+          position: fixed;
           padding: 10px;
           padding-bottom: 60px;
-}
+}*/
 
 #logo { 
           float: left;
@@ -59,12 +60,12 @@ body {
 }
 
 header {
-          z-index: 3;
+          z-index: 1;
 
           position: fixed; 
-          width: 100%;
+          margin-top: -25px;
           width: 70%; left: 15%; 
-          height: 185px; 
+          height: 155px; 
           background-color: #D1D2D4;
 }
 
@@ -107,28 +108,30 @@ h1, h2, h3, h4 {
   				color: #58585B
 }
 
-/*#body {
-          padding:10px;
-          padding-bottom:60px; 
-          width: 70%; left: 15%;
+.actions{
+          font-family: 'Lato', sans-serif;
+          font-size: 1em;
+          color: #58585B
+}
+/*
+.float {
+           max-height:5px;
+           position:static;
 }*/
 
 
-#footertext  {
+
+#footer {
+          position: fixed;
+          padding-top: 25px;
+          bottom: 0;
+          width: 70%; left: 15%; 
+          height: 60px;
           font-family: 'Lato', sans-serif;
           font-size: 1em;
           color: #58585B;
           float: right;
           margin-right: 24px;
-
-}
-
-#footer {
-          position: absolute;
-          bottom: 0;
-/*          width: 100%;*/
-          width: 70%; left: 15%; 
-          height: 60px;
    
 }
 
