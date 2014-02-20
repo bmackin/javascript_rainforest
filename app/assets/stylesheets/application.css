@@ -11,35 +11,12 @@
  *= require_self
  *= require_tree .
  */
-div {
-  
-}
-html,
-body {
-           margin:0;
-           padding:0;
-           height:100%;
-}
 
-#container {
-           min-height:100%;
-           position:relative;
-}
-
-#header {
-          padding: 10px;
-}
-
-/*#body {
-          position: fixed;
-          padding: 10px;
-          padding-bottom: 60px;
-}*/
 
 #logo { 
           float: left;
-          margin-left: 50px;
-          padding-top: 67px;
+          margin-left: 30px;
+          padding-top: 55px;
 }
 
 
@@ -61,10 +38,11 @@ body {
 
 header {
           z-index: 1;
+          text-align: center;
 
           position: fixed; 
           margin-top: -25px;
-          width: 70%; left: 15%; 
+          width: 100%; 
           height: 155px; 
           background-color: #D1D2D4;
 }
@@ -78,7 +56,7 @@ header ul{
 header ul li{
           display: inline;
           float: left;
-          margin-right: 18px;
+          margin-right: 30px;
 }
 
 
@@ -113,19 +91,20 @@ h1, h2, h3, h4 {
           font-size: 1em;
           color: #58585B
 }
-/*
-.float {
-           max-height:5px;
-           position:static;
-}*/
 
-
-
+#status {
+          position: static;
+          font-family: 'Lato', sans-serif;
+          font-size: 1em;
+          color: #58585B;
+          float: right;
+          margin-right: 24px;
+}
 #footer {
           position: fixed;
           padding-top: 25px;
           bottom: 0;
-          width: 70%; left: 15%; 
+
           height: 60px;
           font-family: 'Lato', sans-serif;
           font-size: 1em;

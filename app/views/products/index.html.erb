@@ -1,13 +1,21 @@
 <div id="body">
 
-	<% @products.each do |product| %>
+<%= form_tag products_path, method: :get, authentication: false, id: 'search-form' do %>
+		<%= text_field_tag :search, params[:search]  %>
+		<%= submit_tag "Search" %>
+		<% end %>
 
+<div id="products">
+	<%= render @products %>
 
+</div>
+
+<!-- 	<% @products.each do |product| %>
 	<div class="float">
 		<p><%= link_to image_tag(product.url, :size => "180x250"), "/products/#{product.id}" %></p><br />
 			<p><%= link_to product.name, product_path(product) %></p>
 	</div>
-<% end %>
+<% end %> -->
 </div>
 
 
