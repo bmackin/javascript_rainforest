@@ -10,8 +10,7 @@ Rainforest::Application.routes.draw do
   get "users/create"
 
   resources :products do
-    get 'search', on: :collection
-  resources :reviews, :except => [:index]
+    resources :reviews, :except => [:index]
   end
   # resources :products
   resources :users, :only => [:new, :create]

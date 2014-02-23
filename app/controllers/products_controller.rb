@@ -8,13 +8,10 @@ class ProductsController < ApplicationController
     else
       Product.all
     end
+      if request.xhr?
+        return render @products
+      end
   end
-
-  def search
-    @products = Product.where("name ILIKE ?", "%#{params[:search]}%")
-    render @products
-  end
-  
   # def index
   #   @products = Product.all
   # end
