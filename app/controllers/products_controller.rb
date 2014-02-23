@@ -9,6 +9,12 @@ class ProductsController < ApplicationController
       Product.all
     end
   end
+
+  def search
+    @products = Product.where("name ILIKE ?", "%#{params[:search]}%")
+    render @products
+  end
+  
   # def index
   #   @products = Product.all
   # end

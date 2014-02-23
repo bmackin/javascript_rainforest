@@ -8,7 +8,9 @@ Rainforest::Application.routes.draw do
   get "sessions/destroy"
   get "users/new"
   get "users/create"
+
   resources :products do
+    get 'search', on: :collection
   resources :reviews, :except => [:index]
   end
   # resources :products
