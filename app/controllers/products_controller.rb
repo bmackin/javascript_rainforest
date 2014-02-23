@@ -8,9 +8,11 @@ class ProductsController < ApplicationController
     else
       Product.all
     end
-      if request.xhr?
-        return render @products
-      end
+    
+    respond_to do |format|
+      format.html
+      format.js
+    end
   end
   # def index
   #   @products = Product.all
