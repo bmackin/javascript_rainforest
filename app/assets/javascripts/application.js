@@ -21,9 +21,33 @@ $(document).ready(function(){
 		event.preventDefault();
 		var searchValue = $('search').val();
 
-	// $.ajax({
 	$.getScript('/products?search=' + searchValue);
-	
+
 	});
+
+// 	$(window).scroll(function() {
+// 		$(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+// 		return alert('near bottom');
+// 	}
+// 	});
+// });
+
+$(window).scroll(function() {
+	if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+		console.log($('pagination span.next').eq(-2).children().attr('href'));
+		$.getScript($('.pagination span.next').eq(-2).children().attr('href'));
+	}
 });
+});
+
+
+
+	// $(window).scroll(function(){
+	// 	var url = $('.paagination span.next').children().attr('href');
+	// 	if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 200) {
+	// 		$('pagination').text("Fetching more products...");
+	// 		return $.getScript(url);
+	// 	}
+	// });
+// });
 
