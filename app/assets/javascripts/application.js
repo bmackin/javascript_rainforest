@@ -32,22 +32,21 @@ $(document).ready(function(){
 // 	});
 // });
 
-$(window).scroll(function() {
-	if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
-		console.log($('pagination span.next').eq(-2).children().attr('href'));
-		$.getScript($('.pagination span.next').eq(-2).children().attr('href'));
-	}
-});
-});
-
-
-
-	// $(window).scroll(function(){
-	// 	var url = $('.paagination span.next').children().attr('href');
-	// 	if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 200) {
-	// 		$('pagination').text("Fetching more products...");
-	// 		return $.getScript(url);
-	// 	}
-	// });
+// $(window).scroll(function() {
+// 	if ($(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+// 		console.log($('pagination span.next').eq(-2).children().attr('href'));
+// 		$.getScript($('.pagination span.next').eq(-2).children().attr('href'));
+// 	}
 // });
+// });
+
+if ($('.pagination').length) {
+	$(window).scroll(function() {
+		var url = $('.pagination span.next').children().attr('href');
+		if (url && $(window).scrollTop() > $(document).height() - $(window).height() - 50) {
+			$('pagination').text("Fetching more products...");
+			return $.getScript(url);
+		}
+	});
+});
 
