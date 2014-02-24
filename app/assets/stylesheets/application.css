@@ -59,12 +59,16 @@ header ul li{
           margin-right: 30px;
 }
 
-
 p {
   				font-family: 'Lato', sans-serif;
   				font-size: 1em;
   				color: #58585B
+}
 
+#products-pagination {
+          font-family: 'Lato', sans-serif;
+          font-size: 1em;
+          color: #58585B
 }
 
 
@@ -102,6 +106,18 @@ h1, h2, h3, h4 {
           margin-right: 24px;
 /*          margin-top: 0%;*/
 }
+
+#container {
+          font-family: 'Lato', sans-serif;
+          font-size: 1em;
+          color: #58585B;
+          text-align: centre;
+          position: static; 
+          padding-bottom: 10px;
+          padding-top: 75px;
+/*          margin-top: 75px;*/
+}
+
 /*#footer {
           position: static;
           padding-top: 25px;

@@ -1,16 +1,20 @@
-<div id="body">
+<div id="container">
 
 	<%= form_tag products_path, method: :get, authentication: false, id: 'search-form' do %>
 		<%= text_field_tag :search, params[:search]  %>
 		<%= submit_tag "Search" %>
 		<% end %>
 
-	<div id="products">
+<!-- renders a helpful message with numbers of displayed vs. total entries -->
+
+	<p id="products-count"><%= page_entries_info @products %></p>
+
+<div id="products">
 	<%= render @products %>
+</div>
 
-	</div>
-
-
+	<p id="products-pagination"><%= paginate @products %></p>
+	<p>  </p>
 
 </div>
 
