@@ -23,7 +23,8 @@ User.create!({
 	Product.create({
 		name: "Product#{i}",
 		description: "Description#{i}",
-		price_in_cents: i
+		price_in_cents: i,
+		url: "http://flickholdr.com/200/300/sea,sun/1"
 	}
 )
 end

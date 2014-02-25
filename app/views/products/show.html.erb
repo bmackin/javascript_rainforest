@@ -3,8 +3,9 @@
 
 <p><%= link_to 'back', products_path %></p>
 
- <img src="<%= @product[:url] %>">
+ <img src="http://flickholdr.com/200/300/sea,sun/1">
  <h2><%= @product.name %></h2>
+ <%= @product.url %>
  <p><%= @product.formatted_price %></p>
   <p><%= @product.description %></p>
 
@@ -39,4 +40,21 @@
     <% end %>
 
 <%= link_to 'Edit', edit_product_path(@product) %> 
+
+
+<script type="text/javascript">
+  $(function() {
+     $("#new_review")
+        .on('ajax:beforeSend', function() { 
+          $("input[type='submit']") /
+            .val('Saving...') 
+            .attr('disabled', 'disabled');
+        })
+        .on('ajax:complete', function() {
+          $("input[type='submit']")
+            .val('Create Review')
+            .removeAttr('disabled');
+        });
+  });
+</script>
  
